@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificador de texto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="logo" src="./img/Vector.png" alt="Logo da Alura" />
+    <div class="page">
+      <div class="left">
+        <p>
+          <input
+            class="main-text"
+            type="text"
+            placeholder="Digite seu texto"
+            name="text"
+            id="text"
+          />
+        </p>
+        <p id="message" class="main-text"></p>
+        <p>
+          <img class="info" src="./img/info.png" alt="" /> Apenas letras
+          minúsculas e sem acento
+        </p>
+
+        <div class="button">
+          <button class="button-left" type="button" onclick="encrypt()">
+            Encriptografar
+          </button>
+          <button class="button-right" type="button" onclick="decrypt()">
+            Descriptografar
+          </button>
+        </div>
+        <footer>Desenvolvido por Leonardo Mazzotti</footer>
+      </div>
+
+      <div class="right">
+        <p id="output" class="final-text unique output"></p>
+
+        <div id="data">
+          <img
+            src="./img/people.png"
+            alt="Pessoa olhando um diamente com uma lupa"
+          />
+
+          <h1>Nenhuma mensagem encontrada</h1>
+
+          <p>Digite o texto que você deseja criptografar ou descriptografar</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
